@@ -1,9 +1,10 @@
 {
   "name": "typescript-npm-library-starter",
-  "version": "1.0.4",
+  "version": "0.0.1",
   "description": "Starter for a NPM package build with TypeScript goodness 🚀",
   "scripts": {
     "test": "jest --config jestconfig.json",
+    "test:watch": "jest --config jestconfig.json --watchAll",
     "prepublishOnly": "npm test && npm run lint && npm run format && npm run tscov",
     "preversion": "npm run lint && npm run tscov",
     "version": "npm run format && git add -A src",
@@ -17,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/raymonschouwenaar/typescript-npm-library-starter"
+    "url": "git+https://github.com/raymonschouwenaar/object-to-map-js"
   },
   "keywords": [
     "typescript",
